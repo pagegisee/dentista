@@ -1,0 +1,214 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #bfc1c3;
+}
+
+
+header {
+    background-color: #595b5b; 
+    color: #fff;
+    padding: 10px 20px;    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    color: rgba(249, 250, 251, 0.971);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #f5f6f9;
+    margin-bottom: 20px;
+    font-size: 2.5em; 
+}
+
+
+#citas {
+    background: rgba(20, 60, 87, 0.903);
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(36, 14, 66, 0.393);
+}
+
+#citaForm label, #citaForm input, #citaForm select, #citaForm button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#citaForm input, #citaForm select {
+    padding: 12px;
+    border: 1px solid #4b1c3b;
+    border-radius: 4px;
+}
+
+#citaForm button {
+    background-color: #130c10ec; 
+    color: rgb(246, 242, 242);
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#citaForm button:hover {
+    background-color: #902d946e;
+}
+
+
+.btn-regresar {
+    display: inline-block;
+    margin-top: 20px; 
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #f5f6f9; 
+    border: 2px solid #f5f6f9;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-regresar:hover {
+    background-color: #f5f6f9;
+    color: #143c57; 
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+#main-logo {
+    width: 50px; 
+    height: 80px; 
+    
+  
+    border-radius: 50%; 
+    object-fit: cover; 
+    
+    display: block; 
+    margin: 0 auto 10px auto; 
+}
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+       
+        transform: translateX(calc(-220px * 3)); 
+    }
+}
+
+
+/* Estilos para la tabla de especialidades */
+.especialidades-tabla {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Para que el borde redondeado afecte a la tabla */
+}
+
+.especialidades-tabla th, .especialidades-tabla td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.especialidades-tabla th {
+    background-color: #2f5d79; /* Color de acento */
+    color: white;
+}
+
+.especialidades-tabla tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color para filas pares */
+}
+/* Estilos para el carrusel de dentistas */
+#equipo {
+    overflow: hidden; /* Oculta el desbordamiento para que el carrusel funcione */
+    position: relative;
+    width: 100%;
+}
+.dentistas-carousel {
+    display: flex; 
+    gap: 20px; 
+    padding: 20px 10px; 
+   
+    animation: scroll 30s linear infinite alternate;
+}
+
+/* Pausar la animación al pasar el ratón por encima */
+.dentistas-carousel:hover {
+    animation-play-state: paused;
+}
+
+.dentista-card {
+    background-color: #2f5d79;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(232, 39, 235, 0.1);
+    text-align: center;
+    flex: 0 0 220px; 
+}
+
+.dentista-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+    border: 3px solid #07090e; 
+    transition: transform 0.3s ease; 
+}
+
+.dentista-card img:hover {
+    transform: scale(1.1); 
+}
+
+

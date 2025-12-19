@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Dental Las P.P.P</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="IMAGENES_OCTAVIO/IMAGEN1.jpeg" alt="Logo" class="logo"> 
+            <h1>Consultorio Dental Las P.P.P</h1>
+        </div>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#citas">Citas</a>
+        </nav>
+    </header>
+
+    <section id="servicios">
+        <h2>Nuestras Especialidades</h2>
+        <table class="especialidades-tabla">
+            <thead>
+                <tr>
+                    <th>Especialidad</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ortodoncia</td>
+                    <td>Especialistas en la alineación dental y corrección de la mordida para una sonrisa saludable y estética.</td>
+                </tr>
+                <tr>
+                    <td>Endodoncia</td>
+                    <td>Tratamientos de conducto y cuidado pulpar para salvar tus dientes y aliviar el dolor.</td>
+                </tr>
+                <tr>
+                    <td>Cirugía Maxilofacial</td>
+                    <td>Expertos en extracciones complejas, implantes dentales y cirugía oral avanzada.</td>
+                </tr>
+                <tr>
+                    <td>Periodoncia</td>
+                    <td>Cuidado especializado de las encías y el hueso que soporta tus dientes para prevenir enfermedades.</td>
+                </tr>
+                <tr>
+                    <td>Odontopediatría</td>
+                    <td>Atención dental amigable y especializada para los más pequeños, asegurando una base sólida para su salud bucal.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+<section id="equipo">
+    <h2>Conoce a Nuestros Dentistas</h2>
+    <div class="dentistas-carousel">
+        <div class="dentista-card">
+            <img src="IMAGENES_OCTAVIO/IMAGEN7.jpeg" alt="Foto del Dr. Ezequiel Godoy">
+            <h3>Dr. Ezequiel Godoy</h3>
+            <p>Ortodoncia</p>
+            <p class="descripcion">Especialista en alineación dental y corrección de mordida.</p>
+        </div>
+        <div class="dentista-card">
+            <img src="IMAGENES_OCTAVIO/IMAGEN6.jpeg" alt="Foto de la Dra. Ana Gonzalez">
+            <h3>Dra. Ana Gonzalez</h3>
+            <p>Endodoncia</p>
+            <p class="descripcion">Especialista en tratamientos de conducto y cuidado pulpar.</p>
+        </div>
+        <div class="dentista-card">
+            <img src="IMAGENES_OCTAVIO/IMAGEN5.jpeg" alt="Foto del Dr. Jose Serrano">
+            <h3>Dr. Jose Serrano</h3>
+            <p>Cirugía Maxilofacial</p>
+            <p class="descripcion">Experto en extracciones complejas y cirugía oral.</p>
+        </div>
+        <div class="dentista-card">
+            <img src="IMAGENES_OCTAVIO/IMAGEN4.jpeg" alt="Foto de la Dra. María Morales">
+            <h3>Dra. María Morales</h3>
+            <p>Periodoncia</p>
+            <p class="descripcion">Dedicada al cuidado de las encías y el soporte dental.</p>
+        </div>
+        <div class="dentista-card">
+            <img src="IMAGENES_OCTAVIO/IMAGEN2.jpeg" alt="Foto de la Dra. Astrid Galindo">
+            <h3>Dra. Astrid Galindo</h3>
+            <p>Odontopediatria</p>
+            <p class="descripcion">Cuidado dental integral para toda la familia.</p>
+        </div>
+    </div>
+</section>
+    <section id="citas">
+        <h2>Solicitar Cita</h2>
+        <form id="citaForm">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required>
+
+            <label for="especialidad">Especialidad Requerida:</label>
+            <select id="especialidad" required>
+                <option value="">Seleccione una...</option>
+                <option value="Ortodoncia">Ortodoncia</option>
+                <option value="Endodoncia">Endodoncia</option>
+                <option value="Cirugía">Cirugía Maxilofacial</option>
+                <option value="Periodoncia">Periodoncia</option>
+                <option value="Odontopediatria">Odontopediatria</option>
+            </select>
+            <button type="submit">Enviar Solicitud</button>
+            <p id="mensaje"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Clínica Dental CBTIS 49</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    
+</body>
+</html>
